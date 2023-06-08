@@ -33,11 +33,23 @@ export const getBook = async (_id: string) => {
 
 export const addBook = async (book: INewBook) => {
 	return new Promise(async (resolve, reject) => {
-		const docBook = new Book(book);
-		const addedDocBook = await docBook.save();
-		resolve(addedDocBook.toObject({ versionKey: false }));
+		try {
+			const docBook = new Book(book);
+			const addedDocBook = await docBook.save();
+			resolve(addedDocBook.toObject({ versionKey: false }));
+		} catch (error) {
+			reject(error);
+		}
 	});
 };
+
+// export const addBook = async (book: INewBook) => {
+// 	return new Promise(async (resolve, reject) => {
+// 		const docBook = new Book(book);
+// 		const addedDocBook = await docBook.save();
+// 		resolve(addedDocBook.toObject({ versionKey: false }));
+// 	});
+// };
 
 export const replaceBook = async (_id: string, changedBook: INewBook) => {
 	const oldBook = await Book.find({ _id });

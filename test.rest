@@ -3,6 +3,14 @@
 ### GET INFO
 GET {{url}}
 
+### GOOD LOGIN
+POST {{url}}/login
+content-type: application/json
+
+{
+	"password": "123"
+}
+
 ### GET ALL BOOKS
 GET {{url}}/books
 
@@ -16,7 +24,7 @@ content-type: application/json
 {
   "title": "Added - test.rest 889",
   "description": "lorem ipsum dolor sit amet, consectetur, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet",
-  "numberOfPages": 999,
+  "numberOfPages": "456",
   "language": "english",
   "imageUrl": "http://test.com",
   "buyUrl": "http://test.com"
@@ -46,13 +54,6 @@ content-type: application/json
 	"password": "badpassword"
 }
 
-### GOOD LOGIN
-POST {{url}}/login
-content-type: application/json
-
-{
-	"password": "123"
-}
 
 ### GET CURRENT USER
 GET {{url}}/get-current-user

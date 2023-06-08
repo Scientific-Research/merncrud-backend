@@ -99,9 +99,14 @@ const authorizeUser = (
 };
 
 app.post('/book', authorizeUser, async (req, res) => {
-	const book: INewBook = req.body;
-	const result = await model.addBook(book);
-	res.status(200).send(result);
+	try {
+		const book: INewBook = req.body;
+		const result = await model.addBook(book);
+		res.status(200).send(result);
+	} catch (e) {
+		res.status(401).send(e.message);
+		// res.send('ERROR');
+	}
 });
 
 app.put('/book/:id', authorizeUser, async (req, res) => {
