@@ -28,7 +28,7 @@ content-type: application/json
   "language": "english",
   "imageUrl": "http://test.com",
   "buyUrl": "http://test.com",
-  "whenPurchased": "2023-01-01 18:10:05"
+  "whenPurchased": 123
 }
 
 ### EDIT BOOK
