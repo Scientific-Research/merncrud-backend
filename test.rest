@@ -28,7 +28,7 @@ content-type: application/json
   "language": "english",
   "imageUrl": "http://test.com",
   "buyUrl": "http://test.com",
-  "whenPurchased": 123
+  "whenPurchased": "Homo Deus"
 }
 
 ### EDIT BOOK
