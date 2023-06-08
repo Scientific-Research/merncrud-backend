@@ -28,7 +28,7 @@ content-type: application/json
   "language": "english",
   "imageUrl": "http://test.com",
   "buyUrl": "http://test.com",
-  "whenPurchased": "1950-01-01",
+  "whenPurchased": -123,
   "comments":["Great book.","Super book."]
 }
 
