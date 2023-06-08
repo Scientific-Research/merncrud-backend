@@ -34,8 +34,9 @@ content-type: application/json
   "author":{
     "firstName":"Joe",
     "lastName":"Juli",
-    "age":23
-  }
+    "age":"67"
+  },
+  "email":"mk.BinBANG.de"
 }
 
 ### EDIT BOOK
