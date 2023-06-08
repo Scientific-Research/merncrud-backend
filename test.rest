@@ -3,6 +3,13 @@
 ### GET INFO
 GET {{url}}
 
+
+### GET ALL BOOKS
+GET {{url}}/books
+
+### GET SPECIFIC BOOK
+GET {{url}}/book/62c3fca5997884b0fdda415a
+
 ### GOOD LOGIN
 POST {{url}}/login
 content-type: application/json
@@ -10,12 +17,6 @@ content-type: application/json
 {
 	"password": "123"
 }
-
-### GET ALL BOOKS
-GET {{url}}/books
-
-### GET SPECIFIC BOOK
-GET {{url}}/book/62c3fca5997884b0fdda415a
 
 ### ADD BOOK
 POST {{url}}/book
@@ -29,7 +30,12 @@ content-type: application/json
   "imageUrl": "http://test.com",
   "buyUrl": "http://test.com",
   "whenPurchased": -123,
-  "comments":["Great book.","Super book."]
+  "comments":["Great book.","Super book."],
+  "author":{
+    "firstName":"Joe",
+    "lastName":"Juli",
+    "age":23
+  }
 }
 
 ### EDIT BOOK

@@ -9,6 +9,11 @@ const bookSchema = new mongoose.Schema({
 	buyUrl: String,
 	whenPurchased: Date,
 	comments: [String],
+	author: {
+		firstName: String,
+		lastName: String,
+		age: Number
+	}
 });
 
 export const Book = mongoose.model('book', bookSchema);
