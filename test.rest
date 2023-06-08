@@ -24,7 +24,7 @@ content-type: application/json
 {
   "title": "Added - test.rest 889",
   "description": "lorem ipsum dolor sit amet, consectetur, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet",
-  "numberOfPages": "456",
+  "numberOfPages": false,
   "language": "english",
   "imageUrl": "http://test.com",
   "buyUrl": "http://test.com"
