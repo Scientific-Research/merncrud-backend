@@ -8,6 +8,7 @@ const bookSchema = new mongoose.Schema({
 	imageUrl: String,
 	buyUrl: String,
 	whenPurchased: Date,
+	comments: [String],
 });
 
 export const Book = mongoose.model('book', bookSchema);

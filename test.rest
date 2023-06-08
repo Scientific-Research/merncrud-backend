@@ -28,7 +28,8 @@ content-type: application/json
   "language": "english",
   "imageUrl": "http://test.com",
   "buyUrl": "http://test.com",
-  "whenPurchased": "Homo Deus"
+  "whenPurchased": "1950-01-01",
+  "comments":["Great book.","Super book."]
 }
 
 ### EDIT BOOK
