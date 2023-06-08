@@ -7,6 +7,7 @@ const bookSchema = new mongoose.Schema({
 	language: String,
 	imageUrl: String,
 	buyUrl: String,
+	whenPurchased: Date,
 });
 
 export const Book = mongoose.model('book', bookSchema);

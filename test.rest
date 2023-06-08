@@ -27,7 +27,8 @@ content-type: application/json
   "numberOfPages": 123,
   "language": "english",
   "imageUrl": "http://test.com",
-  "buyUrl": "http://test.com"
+  "buyUrl": "http://test.com",
+  "whenPurchased": "2023-01-01 18:10:05"
 }
 
 ### EDIT BOOK
