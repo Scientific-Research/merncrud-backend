@@ -1,4 +1,4 @@
-@url = http://localhost:5001
+@url = http://localhost:5005
 
 ### GET INFO
 GET {{url}}
@@ -14,7 +14,7 @@ POST {{url}}/book
 content-type: application/json
 
 {
-  "title": "Added - test.rest 111",
+  "title": "Added - test.rest 889",
   "description": "lorem ipsum dolor sit amet, consectetur, lorem ipsum dolor sit amet, lorem ipsum dolor sit amet",
   "numberOfPages": 999,
   "language": "english",
